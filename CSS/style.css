@@ -1,89 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
 
 
 body {
-    
     background-color: rgb(255, 211, 13);
 }
 
-
-header {
-    display: flex;
+section{
+    width: 80%;
     justify-content: center;
 }
 
+header {
+    width: 50%;
+    margin: auto;
+} 
+
 .header img {
-    width: 1000px;
+    width: 100%;
 }
 
-.header h1 {
+
+.header figcaption {
     background-color: #5ea9f0d7;
     color: white;
     text-align: center;
-    }
+    margin: auto;
+}
 
 main {
     background-color: #ffffff;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     gap: 10px;
-    width: 1000px;
+    width: 50%;
+    padding: 10px;
 }
 
 .rubriques {
-    margin: 20px 10px;
     background-color: #5ea9f0d7;
-    height: 120px;
+    height: 200px;
     padding: 10px;
-    width: 300px;
-
+    width: 20%;
 }
 
+.rubriques li {
+    padding: 5px;
+    list-style-type: none;
+}
 .rubriques a {
+    
     color: white;
 }
 
+.partiCentrale {
+    width: 50%;
+    padding: 10px;
+}
+
 .partieCentrale h2{
+    padding-top: 10px;
     color: rgb(223, 189, 38);
 }
 
 .partieCentrale p {
-        /* text-justify: auto; */
+       text-align: justify;
+       margin: 10px 0;
 }
 
 .bioMatt {
-    margin: 20px 10px;
+    width: 30%;
     background-color: #5ea9f0d7;
 }
 
-.bioMatt h2 {
+.bioMatt figcaption {
     color: white;
+    font-weight: 700;
 }
 
 .bioMatt p {
     color: white;
+    text-align: justify;
+    padding: 5px;
 }
 
 .bioMatt img {
     max-width: 100%;
-    height: auto;
-    width: auto;
-    margin: 5px 10px;
-    padding: 5px 10px;
+    padding: 10px;
+}
+
+.bioMatt figcaption {
+    color: white;
+    text-align: center;
 }
 
 footer {
     background-color: #0d44e8;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pied-de-page p{
-    background-color: #0d44e8;
+    width: 50%;
+    margin: auto;
     color: white;
     text-align: center;
+
 }
+
+
 
 
    

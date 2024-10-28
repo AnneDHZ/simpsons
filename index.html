@@ -8,27 +8,30 @@
     <title>Card flexbox</title>
 </head>
 <body>
+    <!-- section permet de reduire la taille du contenu sans toucher au body car illégal -->
+    <section class="contenu">
 
     <!-- bandeau -->
     <header>
-        <div class="header">
-            <h1>Ooooooh Pinaise ! ...</h1>
-            <img src="img/simpsons.jpg" alt="">
-        </div>
+        <figure class="header">
+            <figcaption>Ooooooh Pinaise ! ...</figcaption>
+            <img src="img/simpsons.jpg" alt="les simpsons sur leur canapé">
+        </figure>
     </header>
 
     <!-- Contenu principal avec 3 parties -->
     <main>
-        <!-- Sommaire de rubriques -->
+        <!-- Sommaire des rubriques à gauche -->
         <nav class="rubriques">
-            <a href="" target="_blank">Accueil<br></a>
-            <a href="" target="_blank">Le film<br></a>
-            <a href="" target="_blank">Personnages<br></a>
-            <a href="" target="_blank">Histoire<br></a>
-            <a href="" target="_blank">Matt Groening</a>
+            <ul>
+            <li><a href="" target="_blank">Accueil<br></a></li>
+            <li><a href="" target="_blank">Le film<br></a></li>
+            <li><a href="" target="_blank">Personnages<br></a></li>
+            <li><a href="" target="_blank">Histoire<br></a></li>
+            <li><a href="" target="_blank">Matt Groening</a></li>
+        </ul>
         </nav>
-
-        <!-- Titre et paragraphe -->
+        <!-- Partie Centrale -->
         <section class="partieCentrale">
             <h2>Les Simpsons</h2>
             <p>Les Simpson (The Simpsons) sont une série télévisée d'animation américaine1 créée par Matt Groening et diffusée pour la première fois à partir du 17 décembre 1989 sur le réseau Fox. Depuis 2020, elle est diffusée sur Disney+.
@@ -38,10 +41,12 @@
             </p>
         </section>
 
-        <!-- partie de droite -->
+        <!-- Biographie Matt à droite -->
         <section class="bioMatt">
-            <img src="img/matt groening.jpg" alt="">
-            <h2>Matt Groening</h2>
+            <figure>
+                <img src="img/matt groening.jpg" alt="">
+                <figcaption>Matt Groening</figcaption>
+            </figure>
             <p>Matthew Abram Groening est un dessinateur, scénariste et producteur de télévision américain. Il est le créateur du comic strip Life in Hell et des séries télévisées d'animation Les Simpson, Futurama et Désenchantée.
             </p>
         </section>
@@ -49,10 +54,11 @@
 
     
     <footer>
-        <div class="pied-de-page">
+        <!-- small c'est spécial pour les mentions légales, termes de contrat -->
+        <small class="pied-de-page"> 
             <p>©2024 The Simpsons Elan</p>
-        </div>
+        </small>
     </footer>
-
+    </section>
 </body>
 </html>
