@@ -10,8 +10,9 @@ body {
     background-color: rgb(255, 211, 13);
 }
 
-section{
-    width: 80%;
+.contenu{
+    width: 100%;
+    margin: auto;
     justify-content: center;
 }
 
@@ -20,16 +21,15 @@ header {
     margin: auto;
 } 
 
-.header img {
-    width: 100%;
-}
-
-
 .header figcaption {
     background-color: #5ea9f0d7;
     color: white;
     text-align: center;
     margin: auto;
+}
+
+.header img {
+    width: 100%;
 }
 
 main {
@@ -73,20 +73,10 @@ main {
        margin: 10px 0;
 }
 
+
 .bioMatt {
     width: 30%;
     background-color: #5ea9f0d7;
-}
-
-.bioMatt figcaption {
-    color: white;
-    font-weight: 700;
-}
-
-.bioMatt p {
-    color: white;
-    text-align: justify;
-    padding: 5px;
 }
 
 .bioMatt img {
@@ -96,7 +86,14 @@ main {
 
 .bioMatt figcaption {
     color: white;
+    font-weight: 700;
     text-align: center;
+}
+
+.bioMatt p {
+    color: white;
+    text-align: justify;
+    padding: 5px;
 }
 
 footer {
@@ -105,10 +102,52 @@ footer {
     margin: auto;
     color: white;
     text-align: center;
-
 }
 
+@media (max-width : 1292px) {
+    body {
+        background-color: greenyellow;
+    }
+    
+}
+@media (max-width : 992px) {
+    body {
+        background-color: rgb(88, 135, 18);
+    }
+}
 
+@media (max-width : 692px) {
+    body {
+        background-color: rgb(67, 99, 19);
+    }
+    .bioMatt{
+        display: none;
+    }
+    }
+    
+
+@media (max-width : 92px) {
+    body {
+        background-color: rgb(50, 66, 26);
+    }
+    .bioMatt{
+        display: none;
+    }
+    }
+    
+
+@media (max-width: 768px) {
+    .rubriques, .bioMatt {
+        width:100%;
+    }
+    main, header, footer {
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li {
+        text-align: center;
+    }
+}
 
 
    
