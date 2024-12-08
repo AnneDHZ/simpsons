@@ -16,4 +16,4 @@ Sélecteurs CSS
 
 📚 Ressources
 
-Exercice réalisé dans le cadre de la formation Elan Formation
+Exercice réalisé dans le cadre de la formation DWWM Elan Formation
